@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My first-website page</title>
+    <base  href="file:///C:/Users/kchauhan/HELLO_KC/my-code-base/github/web-projects/first-website/">
+
+    <script>function showHelp(){ alert("Charset: "+document.characterSet); alert("BaseUrI: "+document.baseURI)}
+            function sheetLoaded() { /*Do nothing */}
+            function sheetError()  {alert("An error occurred loading the stylesheet!");}
+    </script>
+    <script type="text/javascript" src="scripts/main.js"></script>
+
+
+     <link href="styles/style.css" rel="stylesheet" type="text/css" onload="sheetLoaded()" onerror="sheetError()">
+     <link href="https://fonts.googleapis.com/css?family=Manuale" rel="stylesheet">
+  </head>
+
+  <body onload="appendHeading('Hello Appended Heading H2')">
+
+    <script>window.alert("Welcome!");</script>
+
+    <h1>Mozilla is cool</h1>
+
+    <img src="images/firefox-icon.png" alt="The Firefox logo: a flaming fox surrounding the Earth."
+    class="centering-the-image" >
+
+    <p>Learned via MDN docs. Web development</p>
+    <p>At Mozilla, we’re a global community of</p>
+        <ul>
+          <li>technologists</li>
+          <li>thinkers</li>
+          <li>builders</li>
+        </ul>
+   <p>Read the <a href="https://www.mozilla.org/en-US/about/manifesto/">Mozilla Manifesto</a> to learn even more about the values and principles that guide the pursuit of our mission.</p>
+
+      <p > Various Anchors</p>
+      <ul>
+        <li><a href="docker.html" target="_blank">Docker sample web page</a></li>
+        <li><a href="#directory-structure" target="_self">Directory structure at server</a></li>
+        <li><input type="button" value="Show Help" onclick="showHelp()"/> </li>
+      </ul>
+
+
+      <script src="scripts/main.js"></script>
+
+        <ul>
+          <li><input type="button" value="Append H3 heading to the page with dummy data" onclick="appendElement('h3')"/></li>
+          <li>thinkers</li>
+          <li>builders</li>
+        </ul>
+  </body>
+</html>
